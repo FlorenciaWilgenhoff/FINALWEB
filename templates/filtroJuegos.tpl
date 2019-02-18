@@ -2,13 +2,13 @@
 <div class="container">
 
   <h5 class="card-title recommtitle">Listado de Categorias</h5>
-  <a href="admin_cat"> <i class="far fa-edit"></i> 
+  <a href="admin_cat"> <i class="far fa-edit"></i>
   <div class="list-group">
     {foreach from=$categorias item=categoria}
       <a href="filtro_juegos/{$categoria["id_categoria"]}" class="list-group-item semidark">{$categoria["nombre"]}</a>
     {/foreach}
   </div>
- 
+
   <h5 class="card-title recommtitle">Listado de Juegos</h5>
   <a href="admin_juegos"><i class="far fa-edit"></i>
 
@@ -28,7 +28,7 @@
    <select class="form-control filtro semidark" name="categoria">
         <option selected>Elija categoría</option>
         {foreach from=$categorias item=categoria}
-        <option value="filtro_juegos/{$categoria["id_categoria"]}" >{$categoria["nombre"]}</option>
+        <option value="{$categoria["id_categoria"]}" >{$categoria["nombre"]}</option>
         {/foreach}
     </select>
     <div class="mostrarFiltro"></div>

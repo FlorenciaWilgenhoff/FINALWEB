@@ -31,7 +31,7 @@ $( document ).ready(function() {
   function mostrarDatos(clase, action){
     $(document).on("click", clase, function(ev){
       ev.preventDefault();
-      var idJuego = $(this).attr("data-id");
+      let idJuego = $(this).attr("data-id");
       $.get("index.php?action=" + action + idJuego, function(data) {
         $(".contenido").html(data);
         getComentarios(idJuego);
@@ -40,11 +40,9 @@ $( document ).ready(function() {
   }
    $(document).on("change", ".filtro", function(ev){
     ev.preventDefault();
-    var id = $(this).val();
+    let id = $(this).val();
       $.post( "filtro_juegos/" + id, function(data){
       $(".mostrarFiltro").html(data);
-       console.log(id);
     });
   });
-
-  
+});

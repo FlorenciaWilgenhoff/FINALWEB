@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="{$home}/js/librerias/bootstrap.min.js"></script>
 		<script type="text/javascript" src="{$home}/js/librerias/popper.min.js"></script>
 		<script type="text/javascript" src="{$home}/js/script.js"></script>
+		<script type="text/javascript" src="{$home}/js/ajax.js"></script>
 		<script type="text/javascript" src="{$home}/js/animations.js"></script>
 		  <script src="{$home}/js/jquery.min.js"></script>
 		  <script src="{$home}/js/bootstrap.min.js"></script>
